@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="Estyle.css"/>
+    
+<body>
+    <div class="container1">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white" style="font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;">
+        <a class="navbar-brand" href="#">
+          <img src="logonew2.jpg" width="120" height="120" alt="">
+        </a>
+          <a class="navbar-brand" href="Home.html">Fur Rescue</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            
+              <li class="nav-item active">
+                <a class="nav-link" href="Home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="Adopt.php">Adopt</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dog
+                </a>
+                <div class="dropdown-menu" style="margin-left: 385px; margin-top:-50px;" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="services.php">Pet Dog</a>
+                  <a class="dropdown-item" href="Straydogsell.php">Stray Dog</a>
+            
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Services
+                </a>
+                <div class="dropdown-menu" style="margin-left: 385px; margin-top:-50px;" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="Consult.php">Consultation</a>
+                  <a class="dropdown-item" href="groom.php">Grooming</a>
+                  <a class="dropdown-item" href="Boarding.php">Boarding</a>
+                  <a class="dropdown-item" href="LostandFound.php">Lost & Found</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="Report.php">Complaint</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="EVENT.html">Events</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="review.php">Review</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="blog.html">Blogs</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="sign.php">Sign Up</a>
+              </li>
+              
+              <li class="nav-item active">
+                <a class="nav-link" href="Home.html.#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    <style>
+        /* Styling the body */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+          
+        /* Styling section, giving background
+            image and dimensions */
+        section {
+            width: 100%;
+            height: 110vh;
+            background:url(backgrnd.jpg);
+            background-size: cover;
+        }
+          
+        /* Styling the left floating section */
+        section .leftBox {
+            width: 50%;
+            height: 100%;
+            float: left;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+          
+        /* Styling the background of
+            left floating section */
+        section .leftBox .content {
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            transition: .5s;
+        }
+          
+        /* Styling the hover effect 
+            of left floating section */
+        section .leftBox .content:hover {
+            background: #e91e63;
+        }
+          
+        /* Styling the header of left
+            floating section */
+        section .leftBox .content h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+          
+        /* Styling the paragraph of
+            left floating section */
+        section .leftBox .content p {
+            margin: 10px 0 0;
+            padding: 0;
+        }
+          
+        /* Styling the three events section */
+        section .events {
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            float: right;
+            box-sizing: border-box;
+        }
+          
+        /* Styling the links of
+        the events section */
+        section .events ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+          
+        /* Styling the lists of the event section */
+        section .events ul li {
+            list-style: none;
+            background: #fff;
+            box-sizing: border-box;
+            height: 200px;
+            margin: 15px 0;
+        }
+          
+        /* Styling the time class of events section */
+        section .events ul li .time {
+            position: relative;
+            padding: 20px;
+            background: #262626;
+            box-sizing: border-box;
+            width: 30%;
+            height: 100%;
+            float: left;
+            text-align: center;
+            transition: .5s;
+        }
+          
+        /* Styling the hover effect
+            of events section */
+        section .events ul li:hover .time {
+            background: #e91e63;
+        }
+          
+        /* Styling the header of time
+            class of events section */
+        section .events ul li .time h2 {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 60px;
+            line-height: 30px;
+        }
+          
+        /* Styling the texts of time
+        class of events section */
+        section .events ul li .time h2 span {
+            font-size: 20px;
+        }
+          
+        /* Styling the details
+        class of events section */
+        section .events ul li .details {
+            padding: 20px;
+            background: #fff;
+            box-sizing: border-box;
+            width: 70%;
+            height: 100%;
+            float: left;
+        }
+          
+        /* Styling the header of the
+        details class of events section */
+        section .events ul li .details h3 {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            font-size: 19px;
+        }
+          
+        /* Styling the lists of details
+        class of events section */
+        section .events ul li .details p {
+            position: relative;
+            margin: 10px 0 0;
+            padding: 0;
+            font-size: 14px;
+        }
+          
+        /* Styling the links of details
+        class of events section */
+        section .events ul li .details a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1.5px solid #262626;
+            margin-top: 8px;
+            font-size: 18px;
+            transition: .5s;
+        }
+          
+        /* Styling the details class's hover effect */
+        section .events ul li .details a:hover {
+            background: #e91e63;
+            color: #fff;
+            border-color: #e91e63;
+        }
+    </style>
+<body>
+    <section>
+        <div class="leftBox">
+            <div class="content">
+                <h1>
+                    Events and Campaigns
+                </h1>
+                 
+<p>
+                    Why is helping and protecting dogs important?</p>
+<p> This is because these homeless dogs often survive by scavenging rubbish, exposed garbage means more healthy dogs – and more puppies. Ironically, this actually makes the dogs a boon to public sanitation. By scavenging garbage, they reduce perishable waste that could otherwise be a source of contamination for people.</p>
+ <p> Immunization makes animals immune to common diseases through vaccination. Returning the dog to its original territory prevents territorial fights and does not put dogs under the stress of navigating a new environment. The adoption of strays allows animals to live a happy and healthy life in a loving home.</p>           
+                
+ 
+            </div>
+        </div>
+  
+        <div class="events">
+            <ul>
+                <li>
+                    <div class="time">
+                        <h2>
+                            15 <br><span>June</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            Campaign to feed stray dogs
+                        </h3>
+                         
+<p>
+    The regular feeding of animals also serves as a provision of constant food source. Over time, the stray population will increase if the animals are not sterilised. And stray animals generally lead a life of poor welfare on the streets.
+                        </p>
+<p> Place: Bangalore, Koramangala</p>
+<p>Time:9:30am - 5:30pm</p>
+ 
+                    </div>
+                    <div style="clear: both;"></div>
+                </li>
+  
+                <li>
+                    <div class="time">
+                        <h2>
+                            27 <br><span>July</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            How to deal with stray dogs?
+                        </h3>
+                         
+<p>
+                            It is very important to educate our society on how to deal with stray dogs. This awareness campaign will make a change in the mindset of people regarding stray dogs. There is only spot registration available. 
+                        </p>
+<p>Place: Bangalore, Indiranagar</p>
+<p>Time: 10:00am - 12:30pm</p>
+                    </div>
+                    <div style="clear:both;"></div>
+                </li>
+  
+                <li>
+                    <div class="time">
+                        <h2>
+                            12 <br><span>August</span>
+                        </h2>
+                    </div>
+                    <div class="details">
+                        <h3>
+                            How can we protect stray dogs?
+                        </h3>
+                         
+<p>
+                            This awareness class will help to educate people on how to protect stray dogs. 
+                        </p>
+<p>Place: Bangalore, J P Nagar</p>
+<p>Time: 2:30pm - 4:30pm</p>
+                    </div>
+                    <div style="clear:both;"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+  
+</html>

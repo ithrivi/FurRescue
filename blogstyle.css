@@ -1,0 +1,141 @@
+.header{
+    width: 100%;
+    height: 120px;
+    background: #364f6b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+}
+
+.header-left{
+    width: 10%;
+    height: 120px;
+    float: left;
+}
+
+.home{
+    color:white;
+    text-decoration: none;
+    font-family: Circular,Arial,sans-serif;
+    padding-top: 0px;
+}
+
+.header-right{
+    width: 90%;
+    height: 120px;
+    float: left;
+}
+
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    
+    
+}
+
+.blog{
+    display: block;
+    justify-content: center;
+    padding: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-heading span{
+    color: #f33c3c;
+}
+.blog-heading h3{
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+.blog-container{
+    display: flex;
+   
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.blog-box{
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+}
+.blog-img{
+    width: max-content;
+    height: auto;
+    object-position: center;
+}
+.blog-img img{
+    width: max-content;
+    height: max-content;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#96beec,rgb(213, 182, 188));
+}
+.blog-text span{
+    color: #f33c3c;
+    font-size: 0.9rem;
+
+}
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+.blog-text .blog-title:hover{
+    color: brown;
+    transition: all ease 0.3s;
+}
+.blog-text p{
+    color: #0f0f0f;
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+   display: block;
+}
+.blog-text a{
+    color: #0f0f0f;
+}
+.blog-text a:hover{
+    color: brown;
+    transition: all ease 0.3s;
+    
+}
+.header-btn{
+    background: #364f6b;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 40px;
+    border-color: #364f6b;
+    cursor: pointer;
+    text-decoration: none;
+    border-color: #364f6b;
+    border-radius: 5px;
+}
+
+.blog-image{
+    height: 400px;
+    width: 600px;
+    margin-left: 360px;
+}
